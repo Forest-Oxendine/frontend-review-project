@@ -1,7 +1,10 @@
 import './App.css';
 import React from 'react';
+import {Route, Routes} from 'react-router-dom';
+
 // components 
 import NavBar from './components/NavBar';
+import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Project1 from './components/Project1';
 import Project2 from './components/Project2';
@@ -11,10 +14,13 @@ function App() {
   return (
     <div>
      <NavBar />
-     <AboutMe />
-     <Project1 />
-     <Project2 />
-     <Project3 />
+     <Header />
+     <Routes>
+        <Route path='/' end element={<AboutMe/>}/>
+        <Route path='/project1' element={<Project1/>}/>
+        <Route path='/project2' element={<Project2/>}/>
+        <Route path='/project3' element={<Project3/>}/>
+      </Routes>
     </div>
   );
 }

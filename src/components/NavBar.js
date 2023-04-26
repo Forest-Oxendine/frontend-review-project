@@ -1,74 +1,69 @@
+// Pulled from Mood tracker app Project1
 import React from 'react';
-import Project1 from './Project1';
+import styled from 'styled-components';
+import {NavLink} from 'react-router-dom';
 
-// Linked the pages together
-const NavBar = () => {
-  return (
-    <>
-    </>
-  );
-  }
+// imported components
 
+
+function NavBar (){
+    return(
+<>
+<header>
+    <Bar>
+        <NavItem>
+            <NavLink to="/" end>Home</NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink to="/AboutMe">About Me</NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink to="/Project1">Project #1</NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink to="/Project2">Project #2</NavLink>
+        </NavItem>
+        <NavItem>
+            <NavLink to="/Project3">Project #3</NavLink>
+        </NavItem>
+    </Bar>
+</header>
+
+</>
+    );
+}
 export default NavBar;
 
+const Bar = styled.ul`
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+`;
 
-// Pulled from Mood tracker app Project1
-// import React from 'react';
-// import styled from 'styled-components';
-// import {NavLink} from 'react-router-dom';
+const NavItem = styled.li`
+display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
 
-// function NavBar (){
-//     return(
-// <>
-// <header>
-//     <Bar>
-//         <NavItem>
-//             <NavLink to="/" end>Home</NavLink>
-//         </NavItem>
-//         <NavItem>
-//             <NavLink to="/moodquestionspage">Info</NavLink>
-//         </NavItem>
-//         <NavItem>
-//             <NavLink to="/emotioncard">Mood List</NavLink>
-//         </NavItem>
-//     </Bar>
-// </header>
+    a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-// </>
-//     );
-// }
-// export default NavBar;
+    a:hover:not(.active){
+        background-color: #ADD8E6;
+        color: #000000;
+    }
 
-// const Bar = styled.ul`
-// margin: 0;
-// padding: 0;
-// overflow: hidden;
-// background-color: #333;
-// `;
-
-// const NavItem = styled.li`
-// display: block;
-//     color: white;
-//     text-align: center;
-//     padding: 14px 16px;
-//     text-decoration: none;
-//     float: left;
-
-//     a{
-//         display: block;
-//         color: white;
-//         text-align: center;
-//         padding: 14px 16px;
-//         text-decoration: none;
-//     }
-
-//     a:hover:not(.active){
-//         background-color: #ADD8E6;
-//         color: #000000;
-//     }
-
-//     .active{
-//         background-color: #ADD8E6;
-//         color: #000000;
-//     }
-// `;
+    .active{
+        background-color: #ADD8E6;
+        color: #000000;
+    }
+`;
