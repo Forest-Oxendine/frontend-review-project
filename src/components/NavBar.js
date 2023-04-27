@@ -18,6 +18,9 @@ function NavBar (){
             <NavLink to="/AboutMe">About Me</NavLink>
         </NavItem>
         <NavItem>
+            <NavLink to="/projectlist">Project List</NavLink>
+        </NavItem>
+        <NavItem>
             <NavLink to="/Project1">Project #1</NavLink>
         </NavItem>
         <NavItem>

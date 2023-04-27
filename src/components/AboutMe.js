@@ -18,25 +18,7 @@ const AboutMe = () => {
     <Why>
       I found an ad on LinkedIn for those in marginalized communities to apply for a Full Stack Developers course with Hack the Gap.
     </Why>
-    <Project>
-      React Review Project #1
-    </Project>
-    <Prj1>
-      Explain what it's about
-    </Prj1>
-    <Project>
-      Mood Tracker Project #2
-    </Project>
-    <Prj2>
-      Explain what it's about
-    </Prj2>
-    <Project>
-      Fetch API Project #3
-    </Project>
-    <Prj3>
-      Explain what it's about
-    </Prj3>
-
+    <img src="./img/Coding.jpg"></img>
     </>
   );
   }
@@ -58,17 +40,4 @@ const Why = styled.h3`
 text-align: center;
 padding-bottom: 35px;
 `
-const Project = styled.h3`
-`
-const Prj1 = styled.p`
-  font-size: 18px;
-  padding-bottom: 35px;
-`
-const Prj2 = styled.p`
-  font-size: 18px;
-  padding-bottom: 35px;
-`
-const Prj3 = styled.p`
-  font-size: 18px;
-  padding-bottom: 35px;
-`
+
