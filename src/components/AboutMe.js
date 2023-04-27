@@ -18,7 +18,7 @@ const AboutMe = () => {
     <Why>
       I found an ad on LinkedIn for those in marginalized communities to apply for a Full Stack Developers course with Hack the Gap.
     </Why>
-    <img src="./img/Coding.jpg"></img>
+    <img src="./img/Coding.jpg" className="codingImg" alt="Laptop with code on it."></img>
     </>
   );
   }
