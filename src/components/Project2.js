@@ -6,7 +6,7 @@ const Project2 = () => {
   return (
    <>
     <Project>
-      Mood Tracker Project #2
+      Mood Tracker Project 
     </Project>
     <Prj2>
       Explain what it's about

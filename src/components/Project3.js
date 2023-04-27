@@ -6,7 +6,7 @@ const Project3 = () => {
   return (
     <>
     <Project>
-      Fetch API Project #3
+      Fetch API Project 
     </Project>
     <Prj3>
       Explain what it's about

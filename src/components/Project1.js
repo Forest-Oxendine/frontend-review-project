@@ -6,7 +6,7 @@ const Project1 = () => {
   return (
     <>
       <Project>
-        React Review Project #1
+        React Review Project 
       </Project>
       <Prj1>
         Explain what it's about

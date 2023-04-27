@@ -14,9 +14,9 @@ function NavBar (){
         <NavItem>
             <NavLink to="/" end>Home</NavLink>
         </NavItem>
-        <NavItem>
+        {/* <NavItem>
             <NavLink to="/AboutMe">About Me</NavLink>
-        </NavItem>
+        </NavItem> */}
         <NavItem>
             <NavLink to="/projectlist">Project List</NavLink>
         </NavItem>
