@@ -1,6 +1,7 @@
 // import './App.css';
 import React from 'react';
-import {Route, Routes} from 'react-router-dom';
+import {Navigate, Route, Routes} from 'react-router-dom';
+// import { HTMLCourses, CSSCourses, JSCourses } from './data/courses';
 
 // components 
 import NavBar from './components/NavBar';
@@ -13,8 +14,8 @@ import Project3 from './components/Project3';
 function App() {
   return (
     <div className="container">
-     <NavBar />
      <Header />
+     <NavBar />
      <Routes>
         <Route path='/' end element={<AboutMe/>}/>
         <Route path='/project1' element={<Project1/>}/>
