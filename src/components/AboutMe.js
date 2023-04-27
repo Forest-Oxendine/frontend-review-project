@@ -18,7 +18,13 @@ const AboutMe = () => {
     <Why>
       I found an ad on LinkedIn for those in marginalized communities to apply for a Full Stack Developers course with Hack the Gap.
     </Why>
-    <img src="./img/Coding.jpg" className="codingImg" alt="Laptop with code on it."></img>
+    <About>
+      About Me
+    </About>
+    <AboutYou>
+      I have always had a curiosity in coding and was happy to take advantage of the offer Hack The Gap was providing, 100% free. Overall I really enjoed the course and found I enjoy working with React, but feel backend development might be more for me. Once I complete the bootcamp...
+    </AboutYou>
+    <img src="./img/Coding.jpg" alt="Laptop with code on it."></img>
     </>
   );
   }
@@ -36,7 +42,15 @@ const WhyTitle = styled.h2`
 text-align: center;
 padding-top: 45px;
 `
-const Why = styled.h3`
+const Why = styled.p`
+text-align: center;
+padding-bottom: 35px;
+`
+const About = styled.h2`
+text-align: center;
+padding-bottom: 35px;
+`
+const AboutYou = styled.p`
 text-align: center;
 padding-bottom: 35px;
 `
