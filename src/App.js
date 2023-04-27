@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 
@@ -12,7 +12,7 @@ import Project3 from './components/Project3';
 
 function App() {
   return (
-    <div>
+    <div className="container">
      <NavBar />
      <Header />
      <Routes>

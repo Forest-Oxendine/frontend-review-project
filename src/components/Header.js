@@ -1,25 +1,18 @@
 import React from "react";
-import styled from "styled-components";
+import {NavLink} from 'react-router-dom';
 
 
-function Header (){
-    return(
-        <>
-        <HeaderDiv>
-            <HeaderText>Forest Oxendine's Portfolio</HeaderText>
-        </HeaderDiv>
-        </>
-    );
-}
+const Header = () => (
+    <header>
+      <span className="icn-logo"><i className="material-icons">code</i></span>
+      <ul className="main-nav">
+        <li><NavLink to="/" end style={({isActive})=> isActive ? {background: 'tomato'} : undefined}>Home</NavLink></li>
+        <li><NavLink to="about" className={({isActive})=> isActive ? "custom-class-name" : undefined }>About</NavLink></li>
+        <li><NavLink to="teachers">Teachers</NavLink></li>
+        <li><NavLink to="courses">Courses</NavLink></li>
+      </ul>    
+    </header>
+  );
+  
+  export default Header;
 
-export default Header;
-
-const HeaderDiv = styled.div`
-    padding: 60px;
-    background: #ebebfc;
-`
-const HeaderText = styled.h1`
-text-align: center;
-font-family: 'Delicious Handrawn', cursive;
-background: pink;
-`
