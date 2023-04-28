@@ -28,8 +28,6 @@ const StyledDiv = styled.div`
 `;
 
 const CardName = styled.h2`
-    background-color: pink;
 `
 const CardDescription = styled.p`
-    background-color: pink;
 `

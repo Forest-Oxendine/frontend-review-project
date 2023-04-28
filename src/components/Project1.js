@@ -8,6 +8,9 @@ const Project1 = () => {
       <Project>
         React Review Project 
       </Project>
+      <img scr="./img/RrCode.png" alt="Code For Project"></img>
+      <img scr="./img/RrHome.png" alt="Home Page of Project"></img>
+      <img scr="./img/RrContent.png" alt="List of Albums and Stars To Rate How Much The Album is Liked."></img>
       <Prj1>
         Explain what it's about
       </Prj1>
