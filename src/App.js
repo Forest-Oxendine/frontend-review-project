@@ -1,7 +1,7 @@
 // import './App.css';
 import React from 'react';
-import {Navigate, Route, Routes} from 'react-router-dom';
-// import { HTMLCourses, CSSCourses, JSCourses } from './data/courses';
+import {Route, Routes} from 'react-router-dom';
+
 
 // components 
 import NavBar from './components/NavBar';
